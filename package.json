@@ -1,0 +1,19 @@
+{
+  "name": "femtochart-js",
+  "version": "0.1.0",
+  "description": "A high performance line plotting demonstration.",
+  "author": "progbits",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
