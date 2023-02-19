@@ -319,7 +319,7 @@ export function Axis() {
       if (lastMajorTick + minorTickStep < this.maximum) {
         let tickValue = lastMajorTick + minorTickStep
         this.minorTickValues.push(tickValue)
-        while (tickValue + minorTickStep < this.maximum) {
+        while (tickValue < this.maximum) {
           this.minorTickValues.push(tickValue)
           tickValue += minorTickStep
         }
