@@ -223,7 +223,7 @@ export function Femtochart() {
   this.plotRect = function () {
     return {
       x: this.leftMargin + this.axisWidth,
-      y: this.topMargin - this.axisWidth,
+      y: this.topMargin,
       width:
         this.plot_canvas.element.width - this.leftMargin - this.rightMargin,
       height:
@@ -236,7 +236,7 @@ export function Femtochart() {
     if (axis === 'x') {
       return {
         x: this.leftMargin + this.axisWidth,
-        y: this.plot_canvas.element.height - this.bottomMargin - this.axisWidth,
+        y: this.plot_canvas.element.height - this.bottomMargin,
         width:
           this.plot_canvas.element.width - this.rightMargin - this.leftMargin,
         height: this.axisWidth,
@@ -244,7 +244,7 @@ export function Femtochart() {
     } else if (axis === 'y') {
       return {
         x: this.leftMargin,
-        y: this.topMargin - this.axisWidth,
+        y: this.topMargin,
         width: this.axisWidth,
         height:
           this.plot_canvas.element.height - this.topMargin - this.bottomMargin,
