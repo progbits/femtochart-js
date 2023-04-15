@@ -201,6 +201,9 @@ export function Series(xAxis, yAxis) {
       (x[0] - this.xAxis.minimum) * this.xAxis.pixelsPerAxisUnit()
     )
     for (let i = 0; i < x.length; i++) {
+      if (x[i] < this.xAxis.minimum || x[i] > this.xAxis.maximum) {
+        continue
+      }
       scaled = (x[i] - this.xAxis.minimum) * this.xAxis.pixelsPerAxisUnit()
       if (Math.trunc(scaled) === currentBin) {
         // Current sample belongs in the current bin, check if we should
